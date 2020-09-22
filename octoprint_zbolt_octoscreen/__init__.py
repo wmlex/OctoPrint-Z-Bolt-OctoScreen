@@ -25,9 +25,7 @@ class ZBoltOctoScreenPlugin(octoprint.plugin.SettingsPlugin,
 
     def get_assets(self):
         return dict(
-            less=['less/theme.less'],
-            js=['js/zbolt.js'],
-            css=['css/main.css', 'css/theme.css']
+            js=['js/zbolt.js']
         )
 
     def get_settings_defaults(self):
@@ -69,11 +67,11 @@ class ZBoltOctoScreenPlugin(octoprint.plugin.SettingsPlugin,
             displayVersion = self._plugin_version,
 
             type="github_release",
-            user="Z-Bolt",
+            user="wmlex",
             repo="OctoPrint-Z-Bolt-OctoScreen",
             current=self._plugin_version,
 
-            pip="https://github.com/Z-Bolt/OctoPrint-Z-Bolt-OctoScreen/archive/{target_version}.zip"
+            pip="https://github.com/wmlex/OctoPrint-Z-Bolt-OctoScreen/archive/{target_version}.zip"
             )
         )
 
